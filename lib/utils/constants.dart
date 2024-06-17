@@ -30,10 +30,25 @@ Image CloudChange(String descript, int hour) {
                             'assets/images/cloud few.png',
                             fit: BoxFit.fill,
                           )
-                        : img = Image.asset(
-                            'assets/images/clear day.png',
-                            fit: BoxFit.fill,
-                          );
+                        : descript == 'moderate rain'
+                            ? img = Image.asset(
+                                'assets/images/moderate rain.png',
+                                fit: BoxFit.fill,
+                              )
+                            : descript == 'light rain'
+                                ? img = Image.asset(
+                                    'assets/images/light rain.png',
+                                    fit: BoxFit.fill,
+                                  )
+                                : descript == 'heavy intensity rain'
+                                    ? img = Image.asset(
+                                        'assets/images/heavy intencity rain.png',
+                                        fit: BoxFit.fill,
+                                      )
+                                    : img = Image.asset(
+                                        'assets/images/clear day.png',
+                                        fit: BoxFit.fill,
+                                      );
     return img;
   } else {
     descript == 'Clouds'
@@ -61,10 +76,25 @@ Image CloudChange(String descript, int hour) {
                             'assets/images/cloud few.png',
                             fit: BoxFit.fill,
                           )
-                        : img = Image.asset(
-                            'assets/images/clear night.png',
-                            fit: BoxFit.fill,
-                          );
+                        : descript == 'moderate rain'
+                            ? img = Image.asset(
+                                'assets/images/moderate rain.png',
+                                fit: BoxFit.fill,
+                              )
+                            : descript == 'light rain'
+                                ? img = Image.asset(
+                                    'assets/images/light rain.png',
+                                    fit: BoxFit.fill,
+                                  )
+                                : descript == 'heavy intensity rain'
+                                    ? img = Image.asset(
+                                        'assets/images/heavy intencity rain.png',
+                                        fit: BoxFit.fill,
+                                      )
+                                    : img = Image.asset(
+                                        'assets/images/clear night.png',
+                                        fit: BoxFit.fill,
+                                      );
     return img;
   }
 }
